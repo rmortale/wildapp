@@ -190,6 +190,26 @@
         <finalName>${project.artifactId}</finalName>
         <plugins>
             <plugin>
+                <groupId>com.atlassian.maven.plugins</groupId>
+                <artifactId>maven-jgitflow-plugin</artifactId>
+                <version>1.0-alpha27</version>
+                <configuration>
+                    <!-- performs only install (not deploy) during release-finish -->
+                    <noDeploy>true</noDeploy>
+                    <pushReleases>true</pushReleases>
+                    <pushHotfixes>true</pushHotfixes>
+                    <!-- jgitflow:feature-start Starts a feature branch -->
+                    <!-- jgitflow:feature-finish Finishes a feature branch -->
+                    <!-- jgitflow:release-start Starts a release -->
+                    <!-- jgitflow:release-finish Finishes a release -->
+                    <allowUntracked>true</allowUntracked>
+                    <!-- jgitflow:hotfix-start Starts a hotfix -->
+                    <!-- jgitflow:hotfix-finish Finishes a hotfix -->
+                    <!-- jgitflow:build-number Updates the pom versions in the current branch
+                    by adding a build number label -->
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>cobertura-maven-plugin</artifactId>
                 <version>2.6</version>
