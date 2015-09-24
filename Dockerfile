@@ -1,3 +1,3 @@
 FROM rmortale/wildfly10
 
-ADD target/wildapp.war /opt/jboss/wildfly/standalone/deployments/ROOT.war
+ADD ./buildoutput/wildapp.war /opt/jboss/wildfly/standalone/deployments/ROOT.war

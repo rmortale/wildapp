@@ -8,8 +8,13 @@ branches:
 jdk:
    - oraclejdk8
 
+before_script:
+  - mkdir -p shippable/buildoutput
+  
+after_script:
+  - cp  ./target/wildapp.war ./shippable/buildoutput
+  
 after_success:
-   - mvn clean cobertura:cobertura
    - mvn test
 
 notifications:
