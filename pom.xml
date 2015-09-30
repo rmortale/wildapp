@@ -20,7 +20,7 @@
 
     <groupId>ch.dulce</groupId>
     <artifactId>wildapp</artifactId>
-    <version>1.4-SNAPSHOT</version>
+    <version>1.4</version>
     <packaging>war</packaging>
     <name>WildFly Quickstarts: wildapp</name>
     <description>A starter Java EE 7 webapp project for use on JBoss WildFly / WildFly, generated from the jboss-javaee6-webapp archetype</description>
