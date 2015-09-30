@@ -13,9 +13,6 @@ before_script:
   
 after_script:
   - cp  ./target/wildapp.war ./shippable/buildoutput
-  
-after_success:
-   - mvn test
 
 notifications:
    email:
