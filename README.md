@@ -30,7 +30,7 @@ Configure Maven
 If you have not yet done so, you must [Configure Maven](https://github.com/jboss-developer/jboss-developer-shared-resources/blob/master/guides/CONFIGURE_MAVEN.md) before testing the quickstarts.
 
 
-Start JBoss WildFly with the Web Profile
+Start JBoss WildFly wi th the Web Profile
 -------------------------
 
 1. Open a command line and navigate to the root of the JBoss server directory.
